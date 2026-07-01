@@ -4,9 +4,8 @@ def fib_(n):
     a = 0
     b = 1
     new = []
-    for i in range(n):
+    for i in range(n+1):
         new.append(a)
-        new.append(b)
         a, b = b, a + b
     return new
 print(fib_(4))
